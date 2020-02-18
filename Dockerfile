@@ -3,6 +3,8 @@ FROM openjdk:8
 ENV SBT_VERSION 0.13.15
 
 RUN \
+  rm -rf /var/lib/apt/lists && \
+  mkdir /var/lib/apt/lists && \
   wget http://apt.typesafe.com/repo-deb-build-0002.deb && \
   dpkg -i repo-deb-build-0002.deb && \
   apt-get update && \
