@@ -11,7 +11,7 @@
   #sbt sbtVersion
   
 FROM openjdk:8
-ENV SBT_VERSION 0.13.13
+ENV SBT_VERSION 0.13.15
 
 # Install sbt
 RUN apt-get update
