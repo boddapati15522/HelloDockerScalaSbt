@@ -15,7 +15,7 @@ ENV SBT_VERSION 0.13.13
 
 # Install sbt
 RUN apt-get update
-RUN apt-get install -y java6-runtime-headless
+RUN apt-get install -y default-jre-headless
 #RUN apt-get -y install openjdk-8-jdk
 RUN curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb
 RUN dpkg -i sbt-$SBT_VERSION.deb
