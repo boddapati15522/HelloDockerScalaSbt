@@ -3,7 +3,6 @@ FROM openjdk:8
 ENV SBT_VERSION 0.13.15
 
 RUN \
-  apt-get install openjdk-8-jdk && \
   curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb && \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
