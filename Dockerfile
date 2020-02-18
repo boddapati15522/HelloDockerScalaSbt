@@ -16,7 +16,7 @@ ENV SBT_VERSION 0.13.15
 # Install sbt
 RUN apt-get update
 RUN apt-get install -y default-jre-headless
-RUN apt-get -y install openjdk-8-jdk-headless
+RUN apt-get -y install openjdk-8-jre
 RUN curl -L -o sbt-$SBT_VERSION.deb http://dl.bintray.com/sbt/debian/sbt-$SBT_VERSION.deb
 RUN dpkg -i sbt-$SBT_VERSION.deb
 RUN apt-get -y install sbt
