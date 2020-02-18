@@ -1,4 +1,4 @@
-FROM openjdk:9
+FROM openjdk:8
 
 ENV SBT_VERSION 0.13.15
 
